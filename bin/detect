@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
 BUILD_DIR=$1
+
+source $BIN_DIR/lib
+
+puts-info 'Installing TextBlob Data'
+exit 0
