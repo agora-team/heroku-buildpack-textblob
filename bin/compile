@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+
+source $BIN_DIR/lib
+
+if [ "$TEXTBLOB_LITE" ]; then
+  puts-info 'Installing TextBlob data (lite)'
+  install 'lite'
+else
+  puts-info 'Installing TextBlob data (complete)'
+  install
+fi
+
+echo '/app/.textblob' >! "$ENV_DIR/NLTK_DATA"
+
+puts-info 'TextBlob Data Installed'
