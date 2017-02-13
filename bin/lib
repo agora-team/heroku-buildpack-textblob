@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CORPUS_DIR="$BUILD_DIR/.textblob"
+CORPUS_DIR="$BUILD_DIR/nltk_data"
 
 CORPUS_REQUIRED=$(cat <<EOF
 brown|https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/brown.zip|corpora

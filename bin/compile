@@ -13,6 +13,4 @@ else
   install
 fi
 
-echo '/app/.textblob' >! "$ENV_DIR/NLTK_DATA"
-
 puts-info 'TextBlob Data Installed'
