@@ -2,5 +2,5 @@
 
 BUILD_DIR=$1
 
-echo "-----> Installing TextBlob Data"
+echo "TextBlob"
 exit 0
